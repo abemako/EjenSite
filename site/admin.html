@@ -26,43 +26,35 @@
 <img src="img/title.jpg" width="1000" height="100" alt="title" />
 
 
-<!-- Contents AREA -->
-<div id="content">
-    <!-- Side Menu AREA -->
-    <div id="side-menu">
-        <!-- 施設登録 -->
-        <a class="new-institution" href="new_institution.php"></a>
-        <!--利用者登録-->
-        <a class="new-user" href="new_user.php" ></a>
-        <!--ログイン-->
-        <div id="login-box">
-            <h1 class="head"></h1>
-            <div id="login-box-body">
-            <form action="action" method="post" name="frm_login">
-            <p>利用者ID(メールアドレス)</p><input class="text"  name="username" type="text" size="20" maxlength="50"><BR>
-            <p>パスワード</p><input class="text" name="password" type="password" size="20" maxlength="20"><BR>
-            <p>利用者IDを記憶する</p><input name="memorable" type="checkbox" value="">
-            <a href="javascript:void(0);" class="btn-login"></a>
-            </form>
-            </div>
-            <h1 class="foot"></h1>
-        </div>
-    </div>
-    <!-- main body AREA -->
-    <div id ="main-body">
+    <!-- Contents AREA -->
+    <div id="content">
     
-        <!-- Ticker AREA -->
-        <div class="ticker" rel="roll">
-        <ul>
-        <li><a href="#1">【News1】このテキストはNewsTicker用のダミーテキスト［1］です。このテキストはNewsTicker用のダミーテキスト［1］です。</a></li>
-        <li><a href="#2">【News2】このテキストはNewsTicker用のダミーテキスト［2］です。このテキストはNewsTicker用のダミーテキスト［2］です。</a></li>
-        <li><a href="#3">【News3】このテキストはNewsTicker用のダミーテキスト［3］です。このテキストはNewsTicker用のダミーテキスト［3］です。</a></li>
-        <li><a href="#4">【News4】このテキストはNewsTicker用のダミーテキスト［4］です。このテキストはNewsTicker用のダミーテキスト［4］です。</a></li>
-        <li><a href="#5">【News5】このテキストはNewsTicker用のダミーテキスト［5］です。このテキストはNewsTicker用のダミーテキスト［5］です。</a></li>
-        </ul>
+            <!-- Login form -->
+            <div id="login-box">
+                <h1 class="head"></h1>
+                <div id="login-box-body">
+                
+                <center>
+                <form action="SystemManagerMenu.htm" >
+                <p>email</p><input class="text"  name="email" type="text" size="20" maxlength="50"><BR>
+                <p>Password</p><input class="text" name="password" type="password" size="20" maxlength="20"><BR>
+                <p>ID Memorize<input name="memorable" type="checkbox" value=""></p>
+                <input name="" type="submit" value="SystemManager" />
+                </form>
+                
+                <form action="AgencyMenu.htm" method="get">
+                <input name="" type="submit" value="Real Estate Agency" />
+                </form>
+                
+                <form action="GeneralUserMenu.htm" method="get">
+                <input name="" type="submit" value="General User" />
+                </form>
+                
+                </center>
+                </div>
+            </div>
         </div>
     </div>
-</div>
 
 
 </div>
