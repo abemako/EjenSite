@@ -1,0 +1,79 @@
+@charset="UTF-8";
+
+/* 共通 */
+* {
+	margin:0px;
+	padding:0px;
+	font-size: 13px;
+	/* font-family:"ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3"; */
+	color:#999999;
+}
+
+a:link {
+	text-decoration: none;
+	color: #669999;
+}
+a:visited {
+	text-decoration: none;
+	color: #6699CC;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:active {
+	text-decoration: none;
+}
+/* 共通 END */
+
+
+body {
+	background-color: #FFFFFF;
+	width: 1000px;
+}
+
+
+
+ul li {
+	list-style-type:none;	/* リストマーカー 表示しない */
+}
+
+/* メイン */
+#wrap {
+	width: 1000px;
+	height: auto;
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top:0px;
+}
+
+/* コンテンツ部 */
+#content {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* 左メニュー部 */
+#side-menu {
+	margin-top:4px;
+	width: 200px;
+	height: auto;
+	float: left;
+}
+
+/* メイン部 */
+#main-body {
+	width: 800px;
+	margin-top:4px;
+	margin-left: 0px;
+	float:left;
+}
+
+/* フッタ部 */
+#foot {
+	width: 1000px;
+	margin-bottom: 0px;
+	float:left;
+	margin-left: auto;
+	margin-right: auto;
+}
