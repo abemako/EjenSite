@@ -1,0 +1,177 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<!-- HEAD START -->
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css">
+<!-- CSS AREA -->
+<link href="css/import.css" rel="stylesheet" type="text/css" media="screen,projection" />
+<link href="css/ticker.css" rel="stylesheet" type="text/css" media="screen,projection" />
+
+<!-- Javascript AREA -->
+
+<title>Agency Menu -> RealEstateMnagement -> RealEstateCreate </title>
+</head>
+<!-- HEAD END -->
+
+<!-- BODY START -->
+<body>
+<div id="wrap">
+<img src="img/width_1000.jpg" width="1001" height="12" alt="width:1000" />
+<br />
+<img src="img/title.jpg" width="1000" height="100" alt="title" />
+
+
+    <!-- Contents AREA -->
+    <div id="content">
+    
+      <h1 >Real Estate Agency Menu Page</h1>
+        This page Priority 1
+        <br />
+
+      <!-- Main Menu -->  
+      <table width="1000" border="0">
+          <tr>
+            <td><a href="RealEstateMnagement.htm">Real Estate Mnagement</a></td>
+            <td><a href="RealEstateMnagement.htm">Inquiry Confirmation</a></td>
+            <td><a href="RealEstateMnagement.htm">Corporate Information Maintenance</a></td>
+            <td><a href="RealEstateMnagement.htm">Agent Information Maintenance</a></td>
+            <td><a href="RealEstateMnagement.htm">Report Output</a></td>
+            <td><a href="RealEstateMnagement.htm">Message Box</a></td>
+          </tr>
+        </table>
+<br />
+<br />
+		<!-- Real Estate Detail  -->
+        <form action="RealEstateCreateEnd.htm" method="get" enctype="multipart/form-data">
+		<table width="1000" border="0">
+          <tr>
+            <td colspan="2"><B>Real Estate Ditail</B></td>
+          </tr>
+          
+          <tr>
+          	<td width="129">RealEstateCD</td>
+          	<td width="861"><input name="" type="text" disabled value="AutoNumber" size="20" maxlength="20" /></td>
+          </tr>
+          <tr>
+          	<td width="129">Name</td>
+          	<td width="861"><textarea name="RealEstateName" cols="100" rows="3" wrap="physical"></textarea></td>
+          </tr>
+          <tr>
+          	<td width="129">State</td>
+          	<td width="861">
+            <select name="state">
+          	  <option value="1">Kuara Lumpur</option>
+          	  <option value="2">Johor</option>
+          	  <option value="3">Kedah</option>
+          	  <option value="13">Sabah</option>
+          	  <option value="14" selected="selected">Sarawaku</option>
+          	</select>
+*linked by Area </td>
+          </tr>
+          <tr>
+          	<td width="129">Area</td>
+          	<td width="861">
+            <select name="Area">
+          	  <option value="1401">Kuching</option>
+          	</select>
+            </td>
+          </tr>
+          
+          <tr>
+          	<td width="129">since(yyyy)</td>
+          	<td width="861">
+			<input name="since" type="text" value="1980" size="10" maxlength="4" />
+            </td>
+          </tr>          
+          
+          <tr>
+          	<td width="129">Photo(s)</td>
+          	<td width="861">
+			<input name="Photo[]" type="file" multiple="multiple" />
+            </td>
+          </tr>
+          
+                    
+           <tr>
+          	<td width="129">Recommended comment</td>
+          	<td width="861">
+            <textarea name="Recommendedcomment" cols="100" rows="3" wrap="physical"></textarea>
+            </td>
+          </tr>             
+          
+          <tr>
+          	<td width="129">Price</td>
+          	<td width="861">
+            RM <input name="Price" type="text" value="0" size="20" maxlength="10" />
+            </td>
+          </tr>
+          
+           <tr>
+          	<td width="129">More and more</td>
+          	<td width="861">
+            </td>
+          </tr>
+          
+           <tr>
+          	<td width="129">Agent</td>
+          	<td width="861">
+			<select name="Agent" size="1">
+			  <option value="AG001">Stanley Lee</option>
+			  <option value="AG002">Wei Wei</option>
+			  <option value="AG003">Makoto Abe</option>
+            
+            </select>
+            </td>
+          </tr>          
+          
+          
+           <tr>
+          	<td width="129">Released now</td>
+          	<td width="861">
+            <input name="Release" type="checkbox" value="1" />
+            </td>
+          </tr>        
+        
+        
+        </table>
+        
+        <table width="1000" border="0">
+          <tr>
+            <td>
+            <input name="" type="button" value="Creating" />
+            <input name="" type="button" value="I want Temporary preservation" />
+            </td>
+          </tr>
+        </table>
+ 
+ 
+        
+        </form>
+        
+        <!-- Page Control -->
+
+
+        <br />
+<br />
+
+        
+        <center>
+       
+        <form action="RealEstateMnagement.htm" method="get">
+        <input name="" type="submit" value="Back" />
+        </form>
+        
+      </center>
+
+
+
+    </div>
+
+
+</div>
+</body>
+<!-- BODY END -->
+
+</html>
