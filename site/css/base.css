@@ -4,18 +4,18 @@
 * {
 	margin:0px;
 	padding:0px;
-	font-size: 13px;
+	font-size: 14;
 	/* font-family:"ＭＳ Ｐゴシック", Osaka, "ヒラギノ角ゴ Pro W3"; */
-	color:#999999;
+	color:#000000;
 }
 
 a:link {
 	text-decoration: none;
-	color: #669999;
+	color: #FF0055;
 }
 a:visited {
 	text-decoration: none;
-	color: #6699CC;
+	color: #FF0055;
 }
 a:hover {
 	text-decoration: underline;
@@ -28,7 +28,7 @@ a:active {
 
 body {
 	background-color: #FFFFFF;
-	width: 1000px;
+	text-align:left;
 }
 
 
@@ -37,13 +37,49 @@ ul li {
 	list-style-type:none;	/* リストマーカー 表示しない */
 }
 
+/* 146px button */
+#button146 {
+	width: 146px;
+	height: 26px;
+	color: #FFFFFF;
+    border: 0px;
+	margin-top: 5px;
+	background-image:url(../img/btn146.jpg);
+	text-align:center;
+	float:right;
+	font-size: 20px;
+}
+/* 500px bar line */
+#berLine500 {
+	width: 490px;
+	height: 23px;
+	color: #FFFFFF;
+    margin-top: 5px;
+	background-image:url(../img/barline500.jpg);		
+	padding-top: 3px;
+	font-size: 20px;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+/* 490px bar line */
+#berLine490 {
+	height: 23px;
+	color: #FFFFFF;
+    margin-top: 5px;
+	background-image:url(../img/barline490.jpg);		
+	padding-top: 3px;
+	font-size: 20px;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+
 /* メイン */
 #wrap {
 	width: 1000px;
 	height: auto;
-	margin-left: 0px;
-	margin-right: 0px;
-	margin-top:0px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:5px;
 }
 
 /* コンテンツ部 */
@@ -53,21 +89,121 @@ ul li {
 	margin-right: auto;
 }
 
-/* 左メニュー部 */
-#side-menu {
+/* 左部 */
+#leftside {
 	margin-top:4px;
-	width: 200px;
+	width: 500px;
 	height: auto;
 	float: left;
 }
 
-/* メイン部 */
-#main-body {
-	width: 800px;
+/* 右部 */
+#rightside {
+	width: 500px;
 	margin-top:4px;
 	margin-left: 0px;
 	float:left;
 }
+/* ログインメニュー Login menu start ---------------- */
+#login-menu {
+	width: 490px;
+	height: auto;
+	margin-left: 10px;
+}
+#login-menu h1 {
+	height: 23px;
+	background-image:url(../img/barline490.jpg);
+	color: #FFFFFF;
+	padding-top: 3px;
+	font-size: 20px;
+	padding-left: 10px;
+	margin-bottom: 5px;
+}
+/* ログインメニュー Login menu End ---------------- */
+
+
+/* ヘッダ */
+#head {
+	height:50px;
+	margin-bottom:0px;
+}
+#head h1 {
+	width: auto;
+	height: auto;
+	font-size: 48;
+	float: left;
+	margin-top: 20px;
+	margin-left: 2px
+}
+
+
+
+/* main menu Start ------------------------ */
+#main-menu {
+	width: 1000px;
+	height: 30px;
+	margin-left: 0px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+#main-menu ul.menu {
+	width: auto;
+	height: auto;
+	margin-left: 5px;
+}
+#main-menu ul.menu li {
+	float: left;
+}
+
+#main-menu a.main-menu {
+	background-image: url(../img/menuOnOff.jpg);
+}
+#main-menu a.main-menu02 {
+	background-image: url(../img/menuOnOff.jpg);
+}
+#main-menu a.main-menu03 {
+	background-image: url(../img/menuOnOff.jpg);
+}
+#main-menu a.main-menu04 {
+	background-image: url(../img/menuOnOff.jpg);
+}
+#main-menu a.main-menu05 {
+	background-image: url(../img/menuOnOff.jpg);
+}
+
+#main-menu ul.menu li a {
+	width: 146px;
+	height: 23px;
+	background-repeat: no-repeat;
+	background-position: 0px 0px;
+	display: block;
+	margin-left: 0px;
+	margin-right: 5px;
+	margin-top: 5px;
+	padding-top: 3px;
+	text-align: center;
+	vertical-align: middle;
+	color: #FFFFFF;
+	font-size: 18px;
+}
+#main-menu ul.menu li a:hover {
+	background-position: 0px -26px;
+}
+/* main menu END ------------------------ */
+
+
+/* Search Area Start --------------*/
+#Search-menu {
+	width: 490px;
+	margin-left: 10px;
+}
+
+
+
+/* Search Area End --------------*/
+
+
+
 
 /* フッタ部 */
 #foot {

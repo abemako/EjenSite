@@ -12,8 +12,23 @@
 <!-- Javascript AREA -->
 <script type="text/javascript" src="scripts/jquery.js"></script>
 <script type="text/javascript" src="scripts/jquery.easing.1.3.js"></script>
-<script type="text/javascript" src="scripts/ticker.js"></script>
 
+<script type="text/javascript" src="scripts/ticker.js"></script> <!-- Ticker -->
+<script type="text/javascript" src="scripts/jquery.slider.min.js"></script>	<!-- Slider -->
+
+<link href="css/jquery.slider.css" rel="stylesheet" type="text/css" />
+
+<script type="text/javascript">
+ $(function() {
+ $('#slider').slider({　　//スライドさせる部分の#id名
+ showControls: false,		// <<>>を表示するか
+ autoplay: true,			//自動再生
+ showPosition: true,	// 何枚目かを表示　
+ hoverPause: true,		// マウスオーバーで止める　
+ direction: "left"		// 移動方向
+});
+ });
+ </script>
 <title>WebSite Title</title>
 </head>
 <!-- HEAD END -->
@@ -21,36 +36,28 @@
 <!-- BODY START -->
 <body>
 <div id="wrap">
-<img src="img/width_1000.jpg" width="1001" height="12" alt="width:1000" />
-<br />
-<img src="img/title.jpg" width="1000" height="100" alt="title" />
-
-
-<!-- Contents AREA -->
-<div id="content">
-    <!-- Side Menu AREA -->
-    <div id="side-menu">
-        <!-- 施設登録 -->
-        <a class="new-institution" href="new_institution.php"></a>
-        <!--利用者登録-->
-        <a class="new-user" href="new_user.php" ></a>
-        <!--ログイン-->
-        <div id="login-box">
-            <h1 class="head"></h1>
-            <div id="login-box-body">
-            <form action="action" method="post" name="frm_login">
-            <p>利用者ID(メールアドレス)</p><input class="text"  name="username" type="text" size="20" maxlength="50"><BR>
-            <p>パスワード</p><input class="text" name="password" type="password" size="20" maxlength="20"><BR>
-            <p>利用者IDを記憶する</p><input name="memorable" type="checkbox" value="">
-            <a href="javascript:void(0);" class="btn-login"></a>
-            </form>
-            </div>
-            <h1 class="foot"></h1>
-        </div>
-    </div>
-    <!-- main body AREA -->
-    <div id ="main-body">
+    <!-- Header Area -->
+  <div id="head">
+  	<h1>Real Estate Site</h1>
+  </div>
+  <!-- Menu Area -->
+  <div id="main-menu">
+  	<ul class="menu">
+        <li><a href="#" class="main-menu">Home</a></li>
+        <li><a href="#" class="main-menu">Sell</a></li>
+        <li><a href="#" class="main-menu03">Buy</a></li>
+        <li><a href="#" class="main-menu04">Rent</a></li>        <li><a href="#" class="main-menu05">Contacts</a></li>
+    </ul>
+  </div>
     
+    
+
+    
+    
+
+	<!-- Contents AREA -->
+  <div id="content">
+
         <!-- Ticker AREA -->
         <div class="ticker" rel="roll">
         <ul>
@@ -61,8 +68,63 @@
         <li><a href="#5">【News5】このテキストはNewsTicker用のダミーテキスト［5］です。このテキストはNewsTicker用のダミーテキスト［5］です。</a></li>
         </ul>
         </div>
+
+        <!-- Left Side AREA -->
+        <div id="leftside">
+        
+            <!-- Slider Area -->
+            <div id="slider" style="width: 500px;height: 300px; border: 1px solid #CCC;">
+                <div style="background-image: url(img/003.jpg);">
+                    <h2>slide1</h2>
+                 <p>なんでもかける</p>
+                 </div>
+                <div style="background-image: url(img/k1019p1.jpg);">
+                    <h2>slide2</h2>
+                 <p>なんでもかける</p>   
+                 </div>
+                <div style="background-image: url(img/index_ph003b.jpg);">
+                    <h2>slide3</h2>
+                 <p>なんでもかける</p>   
+                 </div>
+                <div style="background-image: url(img/8005.jpg);">
+                    <h2>slide4</h2>
+                 <p>なんでもかける</p>   
+                 </div>
+            </div>    
+        
+        	<div id="welcome">
+            	<h1 id="berLine500">Welcome Message</h1>
+                <p>
+                Ohayou Gozaimasu Abesan.I think this few template is quite suitable for Malaysia market but due to they are not perfect so we can combine their features into complete puzzle.Please help a look and give me an idea which template is better?I will try design from there.I am doing database design now...I will show in 1 or 2 days time. Arigatou
+
+PDF design is not my designed.
+It is template for Japanese real estate CMS site.
+                </p>
+            </div>
+        
+        </div>
+        <!-- main body AREA -->
+        <div id ="rightside">
+        	<div id="login-menu">
+            	<h1>Login here to access your account</h1>
+                <form action="login.php" method="post" name="login">
+                Email:<input name="email" type="text" size="20" maxlength="100" />
+                Password:<input name="password" type="password" size="20" maxlength="20" /><br />
+				<input name="RememberMe" type="checkbox" value="1" /> Remember me on this computer
+                <input type="submit" value="Login" id="button146" />
+                </form>
+                <a href="#">Forgot password</a>
+            </div>
+            
+            <div id="Search-menu">
+            	<h1 id="berLine490">Search Property</h1>
+
+            
+            </div>
+            
+        </div>
+        
     </div>
-</div>
 
 
 </div>
